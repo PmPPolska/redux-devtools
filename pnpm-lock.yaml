@@ -2468,8 +2468,8 @@ importers:
         specifier: ^7.25.7
         version: 7.25.7(@babel/core@7.25.8)
       '@chromatic-com/storybook':
-        specifier: ^2.0.2
-        version: 2.0.2(react@18.3.1)
+        specifier: ^3.2.2
+        version: 3.2.2(react@18.3.1)(storybook@8.3.5)
       '@storybook/addon-essentials':
         specifier: ^8.3.5
         version: 8.3.5(storybook@8.3.5)(webpack-sources@3.2.3)
@@ -3743,9 +3743,11 @@ packages:
   '@changesets/write@0.3.2':
     resolution: {integrity: sha512-kDxDrPNpUgsjDbWBvUo27PzKX4gqeKOlhibaOXDJA6kuBisGqNHv/HwGJrAu8U/dSf8ZEFIeHIPtvSlZI1kULw==}
 
-  '@chromatic-com/storybook@2.0.2':
-    resolution: {integrity: sha512-7bPIliISedeIpnVKbzktysFYW5n56bN91kxuOj1XXKixmjbUHRUMvcXd4K2liN6MiR5ZqJtmtcPsZ6CebbGlEA==}
+  '@chromatic-com/storybook@3.2.2':
+    resolution: {integrity: sha512-xmXt/GW0hAPbzNTrxYuVo43Adrtjue4DeVrsoIIEeJdGaPNNeNf+DHMlJKOBdlHmCnFUoe9R/0mLM9zUp5bKWw==}
     engines: {node: '>=16.0.0', yarn: '>=1.22.18'}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -5916,6 +5918,7 @@ packages:
 
   boolean@3.2.0:
     resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -6063,8 +6066,8 @@ packages:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
 
-  chromatic@11.10.2:
-    resolution: {integrity: sha512-EbVlhmOLGdx9QRX3RMOTF3UzoyC1aaXNRjlzm1mc++2OI5+6C5Bzwt2ZUYJ3Jnf/pJa23q0y5Y3QEDcfRVqIbg==}
+  chromatic@11.18.1:
+    resolution: {integrity: sha512-hkNT9vA6K9+PnE/khhZYBnRCOm8NonaQDs7RZ8YHFo7/lh1b/x/uFMkTjWjaj/mkM6QOR/evu5VcZMtcaauSlw==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -12040,12 +12043,13 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@chromatic-com/storybook@2.0.2(react@18.3.1)':
+  '@chromatic-com/storybook@3.2.2(react@18.3.1)(storybook@8.3.5)':
     dependencies:
-      chromatic: 11.10.2
+      chromatic: 11.18.1
       filesize: 10.1.6
       jsonfile: 6.1.0
       react-confetti: 6.1.0(react@18.3.1)
+      storybook: 8.3.5
       strip-ansi: 7.1.0
     transitivePeerDependencies:
       - '@chromatic-com/cypress'
@@ -14858,7 +14862,7 @@ snapshots:
 
   chownr@2.0.0: {}
 
-  chromatic@11.10.2: {}
+  chromatic@11.18.1: {}
 
   chrome-trace-event@1.0.4: {}
 
